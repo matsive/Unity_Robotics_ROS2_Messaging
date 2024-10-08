@@ -7,6 +7,17 @@ This repository demonstrates how to set up Unity-Robotics-Hub to send messages t
 - [Unity version 2022.3.29f1](https://unity.com/releases/editor/archive)
 - ROS2 Humble
 ## Unity Section
+To install the Unity Hub on a Debian or Ubuntu Linux distribution, you need to add the Unity Hub Debian repository along with the public signing key to verify the integrity of the packages.
+1. To add the public signing key, run the following command:
 ```
 wget -qO - https://hub.unity3d.com/linux/keys/public | gpg --dearmor | sudo tee /usr/share/keyrings/Unity_Technologies_ApS.gpg > /dev/null
+```
+2. To add the Unity Hub repository, you need an entry in /etc/apt/sources.list.d. Run the following command to add the Unity Hub repository:
+```
+sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/Unity_Technologies_ApS.gpg] https://hub.unity3d.com/linux/repos/deb stable main" > /etc/apt/sources.list.d/unityhub.list'
+```
+3. Update the package cache and install the package:
+```
+sudo apt update
+sudo apt-get install unityhub
 ```
