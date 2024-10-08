@@ -6,7 +6,7 @@ This repository demonstrates how to set up Unity-Robotics-Hub to send messages t
 - [Unity Hub](https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux)
 - [Unity version 2022.3.29f1](https://unity.com/releases/editor/archive)
 - ROS2 Humble
-## Unity Section
+## [Unity Hub](https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux)
 To install the Unity Hub on a Debian or Ubuntu Linux distribution, you need to add the Unity Hub Debian repository along with the public signing key to verify the integrity of the packages.
 1. To add the public signing key, run the following command:
 ```
@@ -30,3 +30,4 @@ To remove the Unity Hub from the system, run the following command:
 ``
 sudo apt-get remove unityhub
 ``
+
