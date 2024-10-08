@@ -48,7 +48,11 @@ Create a project in Unity. Name given in this example is "Unity_ROS2_msgs". Sele
 <div align="center">
   <img src="https://github.com/user-attachments/assets/12e8d452-b3e4-499d-a7ce-59f5c86420c7" alt="Screenshot" width="800"/>
 </div>
-In the Hierarchy the project scenes can be found. Scene or environments are the things that will contain different game_objects which will construct the game. The current open scene SampleScene Contrains Main Camera & Directional Light. Click the "+" icon beside Hierarchy or Right Click under the scene will give option to create game_objects. A Cube Object was created. <br />
+In the Hierarchy the project scenes can be found. Scene or environments are the things that will contain different game_objects which will construct the game. The current open scene SampleScene Contrains Main Camera & Directional Light. Click the "+" icon beside Hierarchy or Right Click under the scene will give option to create game_objects.<br />
+- A Cube Object was created
+- A Plane was created
+- A Material Was created and its color was set as Blue.
+- The Planes color was set as the newly created color material.
 
 
 ## ROS2 Section
