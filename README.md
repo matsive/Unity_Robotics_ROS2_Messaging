@@ -41,7 +41,7 @@ Go to [Unity Download Archive](https://unity.com/releases/editor/archive) to ins
 <div align="center">
   <img src="https://github.com/user-attachments/assets/65232309-1d2b-44ab-8bba-23993dca465d" alt="Screenshot" width="800"/>
 </div>
-
+Create a project in Unity. Name given in this example is "Unity_ROS2_msgs". Make sure the Unity version is 2022.3.29f1.
 
 
 
