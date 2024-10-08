@@ -42,7 +42,6 @@ Create a project in Unity. Name given in this example is "Unity_ROS2_msgs". Sele
 <div align="center">
   <img src="https://github.com/user-attachments/assets/65232309-1d2b-44ab-8bba-23993dca465d" alt="Screenshot" width="800"/>
 </div>
-
 <br />
 <!-- ![Screenshot from 2024-10-07 20-47-17](https://github.com/user-attachments/assets/12e8d452-b3e4-499d-a7ce-59f5c86420c7)-->
 <div align="center">
