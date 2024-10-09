@@ -37,23 +37,35 @@ sudo apt-get remove unityhub
 ``
 ### _Unity version 2022.3.29f1_
 Go to [Unity Download Archive](https://unity.com/releases/editor/archive) to install the specified version into the Unity Hub.
-### _Unity Project_
+### _Unity Create Project_
 Create a project in Unity. Name given in this example is "Unity_ROS2_msgs". Selected Unity version is 2022.3.29f1.<br />
 <!-- ![Screenshot from 2024-10-07 20-29-14](https://github.com/user-attachments/assets/65232309-1d2b-44ab-8bba-23993dca465d)  -->
-<div align="center">
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/65232309-1d2b-44ab-8bba-23993dca465d" width="410" />
+  <img src="https://github.com/user-attachments/assets/12e8d452-b3e4-499d-a7ce-59f5c86420c7" width="500" /> 
+</p>
+<!-- <div align="center">
   <img src="https://github.com/user-attachments/assets/65232309-1d2b-44ab-8bba-23993dca465d" alt="Screenshot" width="800"/>
 </div>
 <br />
-<!-- ![Screenshot from 2024-10-07 20-47-17](https://github.com/user-attachments/assets/12e8d452-b3e4-499d-a7ce-59f5c86420c7)-->
+![Screenshot from 2024-10-07 20-47-17](https://github.com/user-attachments/assets/12e8d452-b3e4-499d-a7ce-59f5c86420c7)
 <div align="center">
   <img src="https://github.com/user-attachments/assets/12e8d452-b3e4-499d-a7ce-59f5c86420c7" alt="Screenshot" width="800"/>
-</div>
+</div>-->
+
+### _Adding Visual Studio Code to Unity_
+
+
+### _Creating Environment and ROS2 Messages_
+
 In the Hierarchy the project scenes can be found. Scene or environments are the things that will contain different game_objects which will construct the game. The current open scene SampleScene Contrains Main Camera & Directional Light. Click the "+" icon beside Hierarchy or Right Click under the scene will give option to create game_objects.<br />
 
  - A Cube Object was created<br />
  - A Plane was created<br />
  - A Material Was created and its color was set as Blue.<br />
  - The Planes color was set as the newly created color material by dragging the material upon the plane.<br />
+ - Double Clicking the cube will center the cube in the scene. <br />
+ - A C_Script "
 ![Screenshot from 2024-10-07 21-21-22](https://github.com/user-attachments/assets/0806faeb-d7c1-495b-b55a-d9f7d084b547)
 
 
