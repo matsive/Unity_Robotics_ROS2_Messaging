@@ -152,7 +152,7 @@ ROS 2 packages are built on frequently updated Ubuntu systems. It is always reco
 sudo apt upgrade
 ```
 `
-Warning
+Warning ::::
 Due to early updates in Ubuntu 22.04 it is important that systemd and udev-related packages are updated before installing ROS 2. The installation of ROS 2’s dependencies on a freshly installed system without upgrading can trigger the removal of critical system packages.
 Please refer to ros2/ros2#1272 and Launchpad #1974196 for more information.
 `
