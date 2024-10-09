@@ -37,7 +37,7 @@ sudo apt-get remove unityhub
 ``
 ### Unity version 2022.3.29f1
 Go to [Unity Download Archive](https://unity.com/releases/editor/archive) to install the specified version into the Unity Hub.
-### _Unity Create Project_
+### Unity Create Project
 Create a project in Unity. Name given in this example is "Unity_ROS2_msgs". Selected Unity version is 2022.3.29f1.<br />
 <!-- ![Screenshot from 2024-10-07 20-29-14](https://github.com/user-attachments/assets/65232309-1d2b-44ab-8bba-23993dca465d)  -->
 <p float="left">
@@ -53,7 +53,7 @@ Similar, ROS2 message generation can also be found in [ROS–Unity Integration: 
 
 In the Hierarchy the project scenes can be found. Scene or environments are the things that will contain different game_objects which will construct the game. The current open scene SampleScene Contrains Main Camera & Directional Light. Click the "+" icon beside Hierarchy or Right Click under the scene will give option to create game_objects.<br />
 
-Environment:
+**Environment:**
  - A Cube Object was created.<br />
  - A Plane was created.<br />
  - A Material Was created and its color was set as Blue.<br />
@@ -64,7 +64,7 @@ Environment:
  <img src="https://github.com/user-attachments/assets/080a5f05-d9f4-4b8d-bad0-63b8e92c33f2" width="390" /> 
 </p>
 
-ROS-TCP-Connector Package Install: <br />
+**ROS-TCP-Connector Package Install:** <br />
 
 Install ROS-TCP-Connector Package from [ROS-TCP-Connector](https://github.com/Unity-Technologies/ROS-TCP-Connector/tree/main).
 
@@ -90,9 +90,13 @@ To install from a local clone of the [ROS-TCP-Connector](https://github.com/Unit
 
 ### *Note: you can append a version tag to the end of the git url, like `#v0.4.0` or `#v0.5.0`
 
-ROS2 Message:<br />
- - A C# Script "UnityMessageToTCP.cs" was created.
+**ROS2 Message:** <br />
+ - After installation of ROS-TCP-Connector Package in unity go to `Robotics`-> `ROS setting`.<br />
+ - And change the protocol to ROS2 as given in image.<br />
+ 
+![image](https://github.com/user-attachments/assets/c72c3e62-a426-402b-9fe6-0d2039c71dc5)
 
+ - A C# Script "UnityMessageToTCP.cs" was created.
 
 
 
