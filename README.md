@@ -1,5 +1,13 @@
-## ROS2 Section (mabye add this 1st)
-### Installing of ROS2 Humble
+# Unity_Robotics_ROS2
+### Follow the main branch of this repository only
+This repository demonstrates how to set up Unity-Robotics-Hub to send messages to a TCP server and subscribe to those messages using created ROS2 package. <br />
+(overall image)
+# Software
+- [Unity Hub](https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux)
+- [Unity version 2022.3.29f1](https://unity.com/releases/editor/archive)
+- [ROS2 Humble for Ubuntu](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
+# ROS2 Section (mabye add this 1st)
+## Installing of ROS2 Humble
 Installation process and files can be found at [Ubuntu (deb packages) ROS2 Humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 
 Or follow the same steps below:<br />
@@ -80,6 +88,20 @@ ros2 run demo_nodes_py listener
 ```
 You should see the talker saying that it’s Publishing messages and the listener saying I heard those messages. This verifies both the C++ and Python APIs are working properly. Hooray!
 
+## Building ROS2 Message Package
+The steps of building a package of ROS2 can be found [Here](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html).
+
+Or follow the below steps:
+In the example we will be subcribing or receiving messages from unity of a objects x,y,z position and row,yaw,pitch rotation data. For that a msgs package will be created.
+1. Source ROS2.
+   ```
+   source /opt/ros/humble/setup.bash
+   ```
+2. 
+
+
+
+
 _end_
 <div align="justify">
 </div>
@@ -97,15 +119,6 @@ _end_
 
 # _# END_
 
-
-# Unity_Robotics_ROS2
-### Follow the main branch of this repository only
-This repository demonstrates how to set up Unity-Robotics-Hub to send messages to a TCP server and subscribe to those messages using ROS2. <br />
-(overall image)
-## Software
-- [Unity Hub](https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux)
-- [Unity version 2022.3.29f1](https://unity.com/releases/editor/archive)
-- [ROS2 Humble for Ubuntu](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 ## Unity Section<br />
 ### Unity Hub<br />
 Install the Unity Hub from [here](https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux). <br />
