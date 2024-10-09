@@ -109,8 +109,53 @@ To install from a local clone of the [ROS-TCP-Connector](https://github.com/Unit
 Unity game can not be played until ROS-message is generated. To do that a ROS2 message package will be created.
 
 ## ROS2 Section (mabye add this 1st)
+### Installing of ROS2 Humble
 Installation process and files can be found at [Ubuntu (deb packages) ROS2 Humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 
+Or follow the same steps below:<br />
+
+Set locale:<br />
+Make sure you have a locale which supports UTF-8. If you are in a minimal environment (such as a docker container), the locale may be something minimal like POSIX. We test with the following settings. However, it should be fine if you’re using a different UTF-8 supported locale.<br />
+```
+locale  # check for UTF-8
+
+sudo apt update && sudo apt install locales
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+locale  # verify settings
+```
+Setup Sources:<br />
+You will need to add the ROS 2 apt repository to your system.<br />
+First ensure that the Ubuntu Universe repository is enabled.<br />
+```
+sudo apt install software-properties-common
+sudo add-apt-repository universe
+```
+Now add the ROS 2 GPG key with apt.
+```
+sudo apt update && sudo apt install curl -y
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+```
+Then add the repository to your sources list.
+```
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+```
+Install ROS 2 packages:
+Update your apt repository caches after setting up the repositories.
+```
+sudo apt update
+```
+ROS 2 packages are built on frequently updated Ubuntu systems. It is always recommended that you ensure your system is up to date before installing new packages.
+```
+sudo apt upgrade
+```
+`
+Warning
+Due to early updates in Ubuntu 22.04 it is important that systemd and udev-related packages are updated before installing ROS 2. The installation of ROS 2’s dependencies on a freshly installed system without upgrading can trigger the removal of critical system packages.
+Please refer to ros2/ros2#1272 and Launchpad #1974196 for more information.
+`
 
 _end_
 <div align="justify">
