@@ -6,7 +6,7 @@ This repository demonstrates how to set up Unity-Robotics-Hub to send messages t
 ## Software
 - [Unity Hub](https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux)
 - [Unity version 2022.3.29f1](https://unity.com/releases/editor/archive)
-- ROS2 Humble
+- [ROS2 Humble for Ubuntu](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 ## Unity Section<br />
 ### Unity Hub<br />
 Install the Unity Hub from [here](https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux). <br />
@@ -109,6 +109,10 @@ To install from a local clone of the [ROS-TCP-Connector](https://github.com/Unit
 Unity game can not be played until ROS-message is generated. To do that a ROS2 message package will be created.
 
 ## ROS2 Section (mabye add this 1st)
+Installation process and files can be found at [Ubuntu (deb packages) ROS2 Humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
+
+
+_end_
 <div align="justify">
 </div>
 <!-- <div align="center">
