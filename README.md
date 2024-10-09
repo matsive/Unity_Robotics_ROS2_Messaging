@@ -7,8 +7,8 @@ This repository demonstrates how to set up Unity-Robotics-Hub to send messages t
 - [Unity Hub](https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux)
 - [Unity version 2022.3.29f1](https://unity.com/releases/editor/archive)
 - ROS2 Humble
-## Unity Section
-### _Unity Hub_
+## Unity Section<br />
+### Unity Hub<br />
 Install the Unity Hub from [here](https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux). <br />
 
 or use the same steps below:<br />
@@ -35,7 +35,7 @@ To remove the Unity Hub from the system, run the following command:
 ``
 sudo apt-get remove unityhub
 ``
-### _Unity version 2022.3.29f1_
+### Unity version 2022.3.29f1
 Go to [Unity Download Archive](https://unity.com/releases/editor/archive) to install the specified version into the Unity Hub.
 ### _Unity Create Project_
 Create a project in Unity. Name given in this example is "Unity_ROS2_msgs". Selected Unity version is 2022.3.29f1.<br />
@@ -45,10 +45,10 @@ Create a project in Unity. Name given in this example is "Unity_ROS2_msgs". Sele
   <img src="https://github.com/user-attachments/assets/12e8d452-b3e4-499d-a7ce-59f5c86420c7" width="450" /> 
 </p>
 
-### _Adding Visual Studio Code to Unity_
+### Adding Visual Studio Code to Unity
 (null right now)
 
-### _Creating Environment and ROS2 Messages_
+### Creating Environment and ROS2 Messages
 Similar, ROS2 message generation can also be found in [ROS–Unity Integration: Publisher](https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/publisher.md) and [ROS–Unity Integration: Subscriber](https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/subscriber.md)
 
 In the Hierarchy the project scenes can be found. Scene or environments are the things that will contain different game_objects which will construct the game. The current open scene SampleScene Contrains Main Camera & Directional Light. Click the "+" icon beside Hierarchy or Right Click under the scene will give option to create game_objects.<br />
