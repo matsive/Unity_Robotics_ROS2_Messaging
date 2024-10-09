@@ -106,9 +106,9 @@ To install from a local clone of the [ROS-TCP-Connector](https://github.com/Unit
  - In that Component add the Cube gameobject by clicking the empty place and selecting the cube or dragging the cube to that empty place.<br />
 (image null null)
 
+Unity game can not be played as ROS-message needs to be generated. To do that a ROS2 message package will be created.
 
-
-## ROS2 Section
+## ROS2 Section (mabye add this 1st)
 <div align="justify">
 </div>
 <!-- <div align="center">
