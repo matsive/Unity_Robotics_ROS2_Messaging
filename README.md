@@ -59,9 +59,10 @@ Environment:
  - A Material Was created and its color was set as Blue.<br />
  - The Planes color was set as the newly created color material by dragging the material upon the plane.<br />
  - Double Clicking the cube will center the cube in the scene. <br />
+<p float="left">
  <img src="https://github.com/user-attachments/assets/0806faeb-d7c1-495b-b55a-d9f7d084b547" width="420" />
- <img src="https://github.com/user-attachments/assets/080a5f05-d9f4-4b8d-bad0-63b8e92c33f2" width="390" />
-<br />
+ <img src="https://github.com/user-attachments/assets/080a5f05-d9f4-4b8d-bad0-63b8e92c33f2" width="390" /> 
+</p>
 
 ROS-TCP-Connector Package Install: <br />
 
@@ -75,8 +76,14 @@ Or use the same steps below. This [ROS-TCP-Connector](https://github.com/Unity-T
     ![image](https://user-images.githubusercontent.com/29758400/110989310-8ea36180-8326-11eb-8318-f67ee200a23d.png)
    
 4. Enter the git URL for the desired package. to declare a specific package version, or exclude the tag to get the latest from the package's `main` branch.
-    1. For the ROS-TCP-Connector, enter `https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector`.
-    2. For Visualizations, enter `https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.visualizations`.
+    1. For the ROS-TCP-Connector, enter
+       ```
+       https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector
+       ```
+    2. For Visualizations, enter
+       ```
+       https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.visualizations
+       ```.
 5. Click `Add`.
 
 To install from a local clone of the [ROS-TCP-Connector](https://github.com/Unity-Technologies/ROS-TCP-Connector/tree/main) repository, see [installing a local package](https://docs.unity3d.com/Manual/upm-ui-local.html) in the Unity manual.
