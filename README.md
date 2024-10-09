@@ -83,7 +83,7 @@ Or use the same steps below. This [ROS-TCP-Connector](https://github.com/Unity-T
     2. For Visualizations, enter
        ```
        https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.visualizations
-       ```.
+       ```
 5. Click `Add`.
 
 To install from a local clone of the [ROS-TCP-Connector](https://github.com/Unity-Technologies/ROS-TCP-Connector/tree/main) repository, see [installing a local package](https://docs.unity3d.com/Manual/upm-ui-local.html) in the Unity manual.
@@ -96,7 +96,10 @@ To install from a local clone of the [ROS-TCP-Connector](https://github.com/Unit
  
 ![image](https://github.com/user-attachments/assets/c72c3e62-a426-402b-9fe6-0d2039c71dc5)
 
- - A C# Script "UnityMessageToTCP.cs" was created.
+ - A C# Script "UnityMessageToTCP.cs" was create and the following code was written in it.
+```
+
+```
 
 
 
