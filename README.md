@@ -44,6 +44,32 @@ Create a project in Unity. Name given in this example is "Unity_ROS2_msgs". Sele
   <img src="https://github.com/user-attachments/assets/65232309-1d2b-44ab-8bba-23993dca465d" width="410" />
   <img src="https://github.com/user-attachments/assets/12e8d452-b3e4-499d-a7ce-59f5c86420c7" width="500" /> 
 </p>
+
+### _Adding Visual Studio Code to Unity_
+(null right now)
+
+### _Creating Environment and ROS2 Messages_
+
+In the Hierarchy the project scenes can be found. Scene or environments are the things that will contain different game_objects which will construct the game. The current open scene SampleScene Contrains Main Camera & Directional Light. Click the "+" icon beside Hierarchy or Right Click under the scene will give option to create game_objects.<br />
+
+Environment:
+ - A Cube Object was created.<br />
+ - A Plane was created.<br />
+ - A Material Was created and its color was set as Blue.<br />
+ - The Planes color was set as the newly created color material by dragging the material upon the plane.<br />
+ - Double Clicking the cube will center the cube in the scene. <br />
+ <img src="https://github.com/user-attachments/assets/0806faeb-d7c1-495b-b55a-d9f7d084b547" width="500" />
+ <img src="https://github.com/user-attachments/assets/080a5f05-d9f4-4b8d-bad0-63b8e92c33f2" width="470" />
+<br />
+ROS2 Message:<br />
+ - A C# Script "UnityMessageToTCP.cs" was created.
+
+
+
+
+## ROS2 Section
+<div align="justify">
+</div>
 <!-- <div align="center">
   <img src="https://github.com/user-attachments/assets/65232309-1d2b-44ab-8bba-23993dca465d" alt="Screenshot" width="800"/>
 </div>
@@ -51,24 +77,6 @@ Create a project in Unity. Name given in this example is "Unity_ROS2_msgs". Sele
 ![Screenshot from 2024-10-07 20-47-17](https://github.com/user-attachments/assets/12e8d452-b3e4-499d-a7ce-59f5c86420c7)
 <div align="center">
   <img src="https://github.com/user-attachments/assets/12e8d452-b3e4-499d-a7ce-59f5c86420c7" alt="Screenshot" width="800"/>
+  ![Screenshot from 2024-10-07 21-21-22](https://github.com/user-attachments/assets/0806faeb-d7c1-495b-b55a-d9f7d084b547)
+  ![image](https://github.com/user-attachments/assets/080a5f05-d9f4-4b8d-bad0-63b8e92c33f2)
 </div>-->
-
-### _Adding Visual Studio Code to Unity_
-
-
-### _Creating Environment and ROS2 Messages_
-
-In the Hierarchy the project scenes can be found. Scene or environments are the things that will contain different game_objects which will construct the game. The current open scene SampleScene Contrains Main Camera & Directional Light. Click the "+" icon beside Hierarchy or Right Click under the scene will give option to create game_objects.<br />
-
- - A Cube Object was created<br />
- - A Plane was created<br />
- - A Material Was created and its color was set as Blue.<br />
- - The Planes color was set as the newly created color material by dragging the material upon the plane.<br />
- - Double Clicking the cube will center the cube in the scene. <br />
- - A C_Script "
-![Screenshot from 2024-10-07 21-21-22](https://github.com/user-attachments/assets/0806faeb-d7c1-495b-b55a-d9f7d084b547)
-
-
-## ROS2 Section
-<div align="justify">
-</div>
