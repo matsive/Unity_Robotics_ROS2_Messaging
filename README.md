@@ -96,11 +96,15 @@ To install from a local clone of the [ROS-TCP-Connector](https://github.com/Unit
  
 ![image](https://github.com/user-attachments/assets/c72c3e62-a426-402b-9fe6-0d2039c71dc5)
 
- - A C# Script "UnityMessageToTCP.cs" was create and the following code was written in it.
+ - A C# Script `UnityMessageToTCP.cs` was create and the following code was written in it.
 ```
-
+(null null)
 ```
-
+ - Create new empty gameobject and name it `RosPublisher`.
+ - Add the created script to the new gameobject **RosPublisher** in the scene by inspection-> add component -> UnityMessageToTCP.cs or dragging it to the empty area below add component in inspection.<br />
+(image null null)
+ - In that Component add the Cube gameobject by clicking the empty place and selecting the cube or dragging the cube to that empty place.<br />
+(image null null)
 
 
 
