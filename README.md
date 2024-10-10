@@ -92,7 +92,7 @@ You should see the talker saying that it’s Publishing messages and the listene
 The steps of building a package of ROS2 can be found [Here](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html).
 
 Or follow the below steps:
-In the example we will be subcribing or receiving messages from unity of a objects x,y,z position and x,y,z,w rotation data. For that a msgs package will be created.
+In the example we will be generating messages from unity of a objects x,y,z position and x,y,z,w rotation data. For that a ROS2 msgs package will be created.
 1. Source ROS2
    ```
    source /opt/ros/humble/setup.bash
@@ -112,6 +112,7 @@ In the example we will be subcribing or receiving messages from unity of a objec
    ![image](https://github.com/user-attachments/assets/bc8e46b9-34b1-4a92-ae00-b1086fed74df)
 
 5. Go to the created package folder open `CMakeLists.txt` to add the code below.
+   (These packages should be installed with ROS2 some might need to be install)
    ```
    cmake_minimum_required(VERSION 3.8)
    project(matsive_r2msgs)
@@ -135,7 +136,7 @@ In the example we will be subcribing or receiving messages from unity of a objec
    ament_export_dependencies(rosidl_default_runtime)
    ament_package()
    ```
-6. Open package.xml file to add the code below:
+7. Open package.xml file to add the code below:
    ```
    <?xml version="1.0"?>
    <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
@@ -162,7 +163,7 @@ In the example we will be subcribing or receiving messages from unity of a objec
     </export>
    </package>
    ```
-7. Then create a folder in the the package folder called `msg`. Open the `msg` folder to create a text file called `UnityCubePosition.txt` later change the extention to `.msg` or `UnityCubePosition.msg`. And add the following lines
+8. Then create a folder in the the package folder called `msg`. Open the `msg` folder to create a text file called `UnityCubePosition.txt` later change the extention to `.msg` or `UnityCubePosition.msg`. And add the following lines
    ```
    float64 x
    float64 y
@@ -172,15 +173,17 @@ In the example we will be subcribing or receiving messages from unity of a objec
    float64 rotz
    float64 rotw
    ```
-8. Go back to ros_ws folder
+9. Go back to ros_ws folder
    ```
    cd ~/ros2_ws
    ```
-9. Now to build the package which will also install the package into ros2->install directory. Replaced package name as `matsive_r2msgs`.
+10. Now to build the package which will also install the package into ros2->install directory. Replaced package name as `matsive_r2msgs`.
    ```
    colcon build --packages-select my_package
    ```
+11. Now matsive_r2msgs can be found in ros_ws->install folder.
 
+## Building ROS2 package 
     
 
 
