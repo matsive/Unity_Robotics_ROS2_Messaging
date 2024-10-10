@@ -156,7 +156,7 @@ In the example we will be subcribing or receiving messages from unity of a objec
 9. Open package.xml file to add the code below:
    ```
    <?xml version="1.0"?>
-   <?xml-model href="http://download.ros.org/schema/package_format3.xsd"       schematypens="http://www.w3.org/2001/XMLSchema"?>
+   <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
    <package format="3">
     <name>matsive_r2msgs</name>
     <version>0.0.0</version>
@@ -179,7 +179,7 @@ In the example we will be subcribing or receiving messages from unity of a objec
       <build_type>ament_cmake</build_type>
     </export>
    </package>
-  ```
+
     
 
 
