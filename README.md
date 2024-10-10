@@ -111,7 +111,7 @@ In the example we will be subcribing or receiving messages from unity of a objec
    ```
    ![image](https://github.com/user-attachments/assets/bc8e46b9-34b1-4a92-ae00-b1086fed74df)
 
-5. Go to the created package folder open `CMakeLists.txt` and add the following lines
+5. Go to the created package folder open `CMakeLists.txt` to add the code below.
    ```
    cmake_minimum_required(VERSION 3.8)
    project(matsive_r2msgs)
@@ -135,6 +135,60 @@ In the example we will be subcribing or receiving messages from unity of a objec
    ament_export_dependencies(rosidl_default_runtime)
    ament_package()
    ```
+6. Then create a folder in the the package folder called `msg`. Open the `msg` folder to create a text file called `UnityCubePosition.txt` later change the extention to `.msg` or `UnityCubePosition.msg`. And add the following lines
+   ```
+   float64 x
+   float64 y
+   float64 z
+   float64 rotx
+   float64 roty
+   float64 rotz
+   float64 rotw
+   ```
+7. Go back to ros_ws folder
+   ```
+   cd ~/ros2_ws
+   ```
+8. Now to build the package which will also install the package into ros2->install directory. Replaced package name as `matsive_r2msgs`.
+   ```
+   colcon build --packages-select my_package
+   ```
+9. Open package.xml file to add the code below:
+   ```
+   <?xml version="1.0"?>
+   <?xml-model href="http://download.ros.org/schema/package_format3.xsd"       schematypens="http://www.w3.org/2001/XMLSchema"?>
+   <package format="3">
+    <name>matsive_r2msgs</name>
+    <version>0.0.0</version>
+    <description>TODO: Package description</description>
+    <maintainer email="matsive@todo.todo">matsive</maintainer>
+    <license>Apache-2.0</license>
+
+    <buildtool_depend>ament_cmake</buildtool_depend>zn 
+    <depend>rclcpp</depend>
+    <depend>std_msgs</depend>
+    <depend>action_msgs</depend>
+    <depend>geometry_msgs</depend>
+    <depend>rosidl_default_generators</depend>
+    <buildtool_depend>rosidl_default_generators</buildtool_depend>
+    <exec_depend>rosidl_default_runtime</exec_depend>
+    <member_of_group>rosidl_interface_packages</member_of_group>
+    <test_depend>ament_lint_auto</test_depend>
+    <test_depend>ament_lint_common</test_depend>
+    <export>
+      <build_type>ament_cmake</build_type>
+    </export>
+   </package>
+  ```
+    
+
+
+
+
+
+
+
+
 
 
 _end_
