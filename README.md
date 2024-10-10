@@ -188,7 +188,22 @@ The steps of building a package of ROS2 can be found [Here](https://docs.ros.org
 
 Or follow the below steps:
 To subcribe or listen to the messages from unity we can check all the nodes available in the local network and select which one we want to listen to or we can create a package to receive the messages.
-
+1. Source ROS2
+   ```
+   source /opt/ros/humble/setup.bash
+   ```
+2. Check ROS2 version
+   ```
+   echo $ROS_DISTRO
+   ```
+3. Go to ros2_ws -> src folder
+   ```
+   cd ~/ros2_ws/src
+   ```
+4. Create a package (Python). I have nameed the package `matsive_r2` and the following lines would come up in terminal as given in image.
+   ```
+   ros2 pkg create --build-type ament_python --license Apache-2.0 <package_name>
+   ```
 
 
 
