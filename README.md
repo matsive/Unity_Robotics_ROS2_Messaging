@@ -135,25 +135,7 @@ In the example we will be subcribing or receiving messages from unity of a objec
    ament_export_dependencies(rosidl_default_runtime)
    ament_package()
    ```
-6. Then create a folder in the the package folder called `msg`. Open the `msg` folder to create a text file called `UnityCubePosition.txt` later change the extention to `.msg` or `UnityCubePosition.msg`. And add the following lines
-   ```
-   float64 x
-   float64 y
-   float64 z
-   float64 rotx
-   float64 roty
-   float64 rotz
-   float64 rotw
-   ```
-7. Go back to ros_ws folder
-   ```
-   cd ~/ros2_ws
-   ```
-8. Now to build the package which will also install the package into ros2->install directory. Replaced package name as `matsive_r2msgs`.
-   ```
-   colcon build --packages-select my_package
-   ```
-9. Open package.xml file to add the code below:
+6. Open package.xml file to add the code below:
    ```
    <?xml version="1.0"?>
    <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
@@ -179,6 +161,25 @@ In the example we will be subcribing or receiving messages from unity of a objec
       <build_type>ament_cmake</build_type>
     </export>
    </package>
+   ```
+7. Then create a folder in the the package folder called `msg`. Open the `msg` folder to create a text file called `UnityCubePosition.txt` later change the extention to `.msg` or `UnityCubePosition.msg`. And add the following lines
+   ```
+   float64 x
+   float64 y
+   float64 z
+   float64 rotx
+   float64 roty
+   float64 rotz
+   float64 rotw
+   ```
+8. Go back to ros_ws folder
+   ```
+   cd ~/ros2_ws
+   ```
+9. Now to build the package which will also install the package into ros2->install directory. Replaced package name as `matsive_r2msgs`.
+   ```
+   colcon build --packages-select my_package
+   ```
 
     
 
