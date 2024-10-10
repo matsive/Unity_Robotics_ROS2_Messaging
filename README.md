@@ -1,6 +1,6 @@
 # Unity_Robotics_ROS2
 ### Follow the main branch of this repository only
-This repository demonstrates how to set up Unity-Robotics-Hub to send messages to a TCP server and subscribe to those messages using created ROS2 package. <br />
+This repository demonstrates how to set up Unity-Robotics-Hub to send messages to a TCP server and subscribe to those messages using created ROS2 package. Summarization of all data. <br />
 (overall image)
 # Software
 - [Unity Hub](https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux)
@@ -92,7 +92,7 @@ You should see the talker saying that it’s Publishing messages and the listene
 The steps of building a package of ROS2 can be found [Here](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html).
 
 Or follow the below steps:
-In the example we will be subcribing or receiving messages from unity of a objects x,y,z position and row,yaw,pitch rotation data. For that a msgs package will be created.
+In the example we will be subcribing or receiving messages from unity of a objects x,y,z position and x,y,z,w rotation data. For that a msgs package will be created.
 1. Source ROS2
    ```
    source /opt/ros/humble/setup.bash
@@ -105,12 +105,36 @@ In the example we will be subcribing or receiving messages from unity of a objec
    ```
    cd ~/ros2_ws/src
    ```
-4. Create a package (CMake/C#). I have nameed the package `matsive_r2msg`
+4. Create a package (CMake/C#). I have nameed the package `matsive_r2msg` and the following lines would come up in terminal as given in image.
    ```
    ros2 pkg create --build-type ament_cmake --license Apache-2.0 <package_name>
    ```
-5. 
+   ![image](https://github.com/user-attachments/assets/bc8e46b9-34b1-4a92-ae00-b1086fed74df)
 
+5. Go to the created package folder open `CMakeLists.txt` and add the following lines
+   ```
+   cmake_minimum_required(VERSION 3.8)
+   project(matsive_r2msgs)
+
+   if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+   add_compile_options(-Wall -Wextra -Wpedantic)
+   endif()
+   find_package(ament_cmake REQUIRED)
+   find_package(rclcpp REQUIRED)
+   find_package(std_msgs REQUIRED)
+   find_package(action_msgs REQUIRED)
+   find_package(geometry_msgs REQUIRED)
+   find_package(trajectory_msgs REQUIRED)
+   find_package(moveit_msgs REQUIRED)
+   find_package(sensor_msgs REQUIRED)
+   find_package(rosidl_default_generators REQUIRED)
+   rosidl_generate_interfaces(${PROJECT_NAME}
+   "msg/UnityCubePosition.msg"
+   DEPENDENCIES std_msgs geometry_msgs sensor_msgs moveit_msgs
+   )
+   ament_export_dependencies(rosidl_default_runtime)
+   ament_package()
+   ```
 
 
 _end_
