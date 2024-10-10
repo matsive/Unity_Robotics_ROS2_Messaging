@@ -93,12 +93,23 @@ The steps of building a package of ROS2 can be found [Here](https://docs.ros.org
 
 Or follow the below steps:
 In the example we will be subcribing or receiving messages from unity of a objects x,y,z position and row,yaw,pitch rotation data. For that a msgs package will be created.
-1. Source ROS2.
+1. Source ROS2
    ```
    source /opt/ros/humble/setup.bash
    ```
-2. 
-
+2. Check ROS2 version
+   ```
+   echo $ROS_DISTRO
+   ```
+3. Go to ros2_ws -> src folder
+   ```
+   cd ~/ros2_ws/src
+   ```
+4. Create a package (CMake/C#). I have nameed the package `matsive_r2msg`
+   ```
+   ros2 pkg create --build-type ament_cmake --license Apache-2.0 <package_name>
+   ```
+5. 
 
 
 
