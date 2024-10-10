@@ -181,11 +181,13 @@ In the example we will be generating messages from unity of a objects x,y,z posi
    ```
    colcon build --packages-select my_package
    ```
-11. Now matsive_r2msgs can be found in ros_ws->install folder.
+10. Now matsive_r2msgs can be found in ros_ws->install folder.
 
 ## Building ROS2 package 
-    
+The steps of building a package of ROS2 can be found [Here](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html).
 
+Or follow the below steps:
+To subcribe or listen to the messages from unity we can check all the nodes available in the local network and select which one we want to listen to or we can create a package to receive the messages.
 
 
 
