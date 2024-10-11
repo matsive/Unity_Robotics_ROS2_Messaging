@@ -1,5 +1,5 @@
-# ROS2 Section Part 1 of 
-## Installing of ROS2 Humble
+# ROS2 Section
+## Part 1. Installing of ROS2 Humble
 Installation process and files can be found at [Ubuntu (deb packages) ROS2 Humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 
 Or follow the same steps below:<br />
