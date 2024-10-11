@@ -9,7 +9,7 @@ This repository demonstrates how to set up Unity-Robotics-Hub to send messages t
 - [Unity version 2022.3.29f1](https://unity.com/releases/editor/archive)
 - [ROS2 Humble for Ubuntu](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 # ROS2 Section Part 1 of 
-[## Installing of ROS2 Humble](https://github.com/matsive/Unity_Robotics_ROS2/blob/main/Documentation/ROS2%20Section/Installing%20of%20ROS2%20Humble.md)
+## [Part 1. Installing of ROS2 Humble](https://github.com/matsive/Unity_Robotics_ROS2/blob/main/Documentation/ROS2%20Section/Installing%20of%20ROS2%20Humble.md)
 ## Building ROS2 Message Package
 The steps of building a package of ROS2 can be found [Here](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html).
 
