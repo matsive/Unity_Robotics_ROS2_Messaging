@@ -1,6 +1,6 @@
 # Unity_Robotics_ROS2
 ### Follow the main branch of this repository only
-This repository demonstrates how to set up Unity-Robotics-Hub to send messages to a TCP server and subscribe to those messages using created ROS2 package. Summarization of all data. <br />
+This repository demonstrates how to set up Unity-Robotics-Hub to send messages to a TCP server and subscribe to those messages using created ROS2 package. This repository is the summarization of all data/links required for it. <br />
 (overall image)
 # Software
 - [Unity Hub](https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux)
