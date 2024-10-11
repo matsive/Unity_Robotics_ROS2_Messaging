@@ -3,6 +3,8 @@
 This repository demonstrates how to set up Unity-Robotics-Hub to send messages to a TCP server and subscribe to those messages using created ROS2 package. This repository is the summarization of all data/links required for it. <br />
 (overall image)
 # Software
+- [Ubuntu 22.04.5 LTS (Jammy Jellyfish)](https://releases.ubuntu.com/jammy/)
+- [Rufus](https://rufus.ie/en/)
 - [Unity Hub](https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux)
 - [Unity version 2022.3.29f1](https://unity.com/releases/editor/archive)
 - [ROS2 Humble for Ubuntu](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
