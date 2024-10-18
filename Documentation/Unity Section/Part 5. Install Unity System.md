@@ -6,4 +6,4 @@
 Go to [Unity Download Archive](https://unity.com/releases/editor/archive) to install the specified version into the Unity Hub.
 Selecting the version will propt open the unity hub and being the installation.
 
-Proceed to :
+Proceed to [Part 6. Unity Create Project & Add Visual Studio Code](https://github.com/matsive/Unity_Robotics_ROS2/blob/main/Documentation/Unity%20Section/Part%206.%20Unity%20Create%20Project%20%26%20Add%20Visual%20Studio%20Code.md)
