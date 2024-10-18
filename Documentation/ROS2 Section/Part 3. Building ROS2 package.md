@@ -43,7 +43,7 @@ To subcribe or listen to the messages from unity we can check all the nodes avai
    ```
    colcon build --packages-select my_package
    ```
-10. Now `matsive_r2msgs` can be found in ros_ws->install folder.
+10. Now `matsive_r2` can be found in ros_ws->install folder. Also it can be run using `ros2 run matsive_r2 xxxxx`.
 
 Proceed to
 
