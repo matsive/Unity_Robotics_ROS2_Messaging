@@ -27,9 +27,11 @@ To subcribe or listen to the messages from unity we can check all the nodes avai
    ```
    xxx
    ```
-7. Edit `package.xml` and add the following code:
-8. Edit `setup.py` to add the following code. Through this the python codes can be called using `ros2 run "package name" "command" `.
-
+7. Edit `package.xml` and add the following code. This should include the packages required to run the the python code.
+   ```
+   xxx
+   ```
+9. Edit `setup.py` to add the following code. The python code `xxx` can be added to the ros2 package as a run command with a nicknames or shortform aka `xxxxx` in this case. (can also add launch comamnds slightly differently). Through this the python codes can be called using `ros2 run matsive_r2 xxxxx`.
 
 
 
