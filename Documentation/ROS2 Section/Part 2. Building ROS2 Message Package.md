@@ -49,7 +49,7 @@ In the example we will be generating messages from unity of a objects x,y,z posi
    ament_export_dependencies(rosidl_default_runtime)
    ament_package()
    ```
-7. Open package.xml file to add the code below:
+6. Open package.xml file to add the code below:
    ```
    <?xml version="1.0"?>
    <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
@@ -76,7 +76,7 @@ In the example we will be generating messages from unity of a objects x,y,z posi
     </export>
    </package>
    ```
-8. Then create a folder in the the package folder called `msg`. Open the `msg` folder to create a text file called `UnityCubePosition.txt` later change the extention to `.msg` or `UnityCubePosition.msg`. And add the following lines
+7. Then create a folder in the the package folder called `msg`. Open the `msg` folder to create a text file called `UnityCubePosition.txt` later change the extention to `.msg` or `UnityCubePosition.msg`. And add the following lines
    ```
    float64 x
    float64 y
@@ -85,11 +85,11 @@ In the example we will be generating messages from unity of a objects x,y,z posi
    float64 roty
    float64 rotz
    ```
-9. Go back to ros_ws folder
+8. Go back to ros_ws folder
    ```
    cd ~/ros2_ws
    ```
-10. to build the package which will also install the package into ros2->install directory. Replaced package name as `matsive_r2msgs`.
+9. To build the package which will also install the package into ros2->install directory. Replaced package name as `matsive_r2msgs`.
    ```
    colcon build --packages-select my_package
    ```
