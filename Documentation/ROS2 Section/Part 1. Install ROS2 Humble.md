@@ -1,7 +1,7 @@
 # ROS2 Section
 [Go To Main Page
 ](https://github.com/matsive/Unity_Robotics_ROS2/blob/main/Documentation/ROS2%20Section/Part%201.%20Installing%20of%20ROS2%20Humble.md)
-## Part 1. Installing of ROS2 Humble
+## Part 1. Install ROS2 Humble
 Installation process and files can be found at [Ubuntu (deb packages) ROS2 Humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 
 Or follow the same steps below:<br />
