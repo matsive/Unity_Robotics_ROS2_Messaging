@@ -27,11 +27,25 @@ To subcribe or listen to the messages from unity we can check all the nodes avai
    ```
    xxx
    ```
-7. Edit `package.xml` and add the following code. This should include the packages required to run the the python code.
+6. Edit `package.xml` and add the following code. This should include the packages required to run the the python code.
    ```
    xxx
    ```
-9. Edit `setup.py` to add the following code. The python code `xxx` can be added to the ros2 package as a run command with a nicknames or shortform aka `xxxxx` in this case. (can also add launch comamnds slightly differently). Through this the python codes can be called using `ros2 run matsive_r2 xxxxx`.
+7. Edit `setup.py` to add the following code. The python code `xxx` can be added to the ros2 package as a run command with a nicknames or shortform aka `xxxxx` in this case. (can also add launch comamnds slightly differently). Through this the python codes can be called using `ros2 run matsive_r2 xxxxx`.
+   ```
+   xx
+   ```
+8. Go back to ros_ws folder
+   ```
+   cd ~/ros2_ws
+   ```
+9. To build the package which will also install the package into ros2->install directory. Replaced `my_package` name as `matsive_r2`.
+   ```
+   colcon build --packages-select my_package
+   ```
+10. Now `matsive_r2msgs` can be found in ros_ws->install folder.
+
+Proceed to
 
 
 
