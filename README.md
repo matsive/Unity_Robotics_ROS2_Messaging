@@ -13,29 +13,7 @@ This repository demonstrates how to set up Unity-Robotics-Hub to send messages t
 ## [Part 2. Building ROS2 Message Package](https://github.com/matsive/Unity_Robotics_ROS2/edit/main/Documentation/ROS2%20Section/Part%202.%20Building%20ROS2%20Message%20Package.md)
 
 
-## Building ROS2 package 
-The steps of building a package of ROS2 can be found [Here](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html).
-
-Or follow the below steps:
-To subcribe or listen to the messages from unity we can check all the nodes available in the local network and select which one we want to listen to or we can create a package to receive the messages.
-1. Source ROS2
-   ```
-   source /opt/ros/humble/setup.bash
-   ```
-2. Check ROS2 version
-   ```
-   echo $ROS_DISTRO
-   ```
-3. Go to ros2_ws -> src folder
-   ```
-   cd ~/ros2_ws/src
-   ```
-4. Create a package (Python). I have nameed the package `matsive_r2` and the following lines would come up in terminal as given in image.
-   ```
-   ros2 pkg create --build-type ament_python --license Apache-2.0 <package_name>
-   ```
-
-
+## [Part 3. Building ROS2 package](https://github.com/matsive/Unity_Robotics_ROS2/blob/main/Documentation/ROS2%20Section/Part%203.%20Building%20ROS2%20package.md)
 
 
 
