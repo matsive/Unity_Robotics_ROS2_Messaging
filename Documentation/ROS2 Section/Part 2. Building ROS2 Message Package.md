@@ -5,7 +5,7 @@
 The steps of building a package of ROS2 can be found [Here](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html).
 
 Or follow the below steps:
-In the example we will be generating messages from unity of a objects x,y,z position and x,y,z rotation data. For that a ROS2 msgs package will be created.
+In the example we will be generating messages from unity of a objects x,y,z position and x,y,z rotation data. For that a ROS2 msgs package will be created. This package will act as our publisher or publisher helper.
 1. Source ROS2
    ```
    source /opt/ros/humble/setup.bash
