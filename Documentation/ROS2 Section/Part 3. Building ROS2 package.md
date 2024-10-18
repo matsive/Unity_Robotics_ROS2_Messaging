@@ -24,8 +24,11 @@ To subcribe or listen to the messages from unity we can check all the nodes avai
    ```
 # finish editing below please   
 5. After creating package inside the package there should be a folder with the same name aka `matsive_r2` for this case. Now create a python file named `xxx` and add the following code.
-6. Edit `package.xml` and add the following code:
-7. Edit `setup.py` to add the following code. Through this the python codes can be called using `ros2 run "package name" "command" `.
+   ```
+   xxx
+   ```
+7. Edit `package.xml` and add the following code:
+8. Edit `setup.py` to add the following code. Through this the python codes can be called using `ros2 run "package name" "command" `.
 
 
 
