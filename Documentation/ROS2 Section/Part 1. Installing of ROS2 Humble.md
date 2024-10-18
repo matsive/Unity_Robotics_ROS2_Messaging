@@ -79,3 +79,5 @@ source /opt/ros/humble/setup.bash
 ros2 run demo_nodes_py listener
 ```
 You should see the talker saying that it’s Publishing messages and the listener saying I heard those messages. This verifies both the C++ and Python APIs are working properly. Hooray!
+
+Process to [Part 2. Building ROS2 Message Package](https://github.com/matsive/Unity_Robotics_ROS2/blob/main/Documentation/ROS2%20Section/Part%202.%20Building%20ROS2%20Message%20Package.md)
