@@ -89,7 +89,7 @@ In the example we will be generating messages from unity of a objects x,y,z posi
    ```
    cd ~/ros2_ws
    ```
-10. Now to build the package which will also install the package into ros2->install directory. Replaced package name as `matsive_r2msgs`.
+10. to build the package which will also install the package into ros2->install directory. Replaced package name as `matsive_r2msgs`.
    ```
    colcon build --packages-select my_package
    ```
