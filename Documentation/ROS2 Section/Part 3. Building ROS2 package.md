@@ -80,9 +80,29 @@ To subcribe or listen to the messages from unity we can check all the nodes avai
    if __name__ == "__main__":
        main()
    ```
-6. Edit `package.xml` and add the following code. This should include the packages required to run the the python code.
-   ```
-   xxx
+6. Edit `package.xml` in package folder and add the following code. This should include the packages required to run the the python code.
+   ```   
+   <?xml version="1.0"?>
+   <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+   <package format="3">
+    <name>matsive_r2</name>
+    <version>0.0.0</version>
+    <description>TODO: Package description</description>
+    <maintainer email="matsive@todo.todo">matsive</maintainer>
+    <license>Apache-2.0</license>
+    <buildtool_depend>ament_python</buildtool_depend>
+    <depend>rclpy</depend>
+    <depend>ros_tcp_endpoint</depend>
+    <depend>moveit_msgs.msg</depend>
+    <test_depend>ament_copyright</test_depend>
+    <test_depend>ament_flake8</test_depend>
+    <test_depend>ament_pep257</test_depend>
+    <test_depend>python3-pytest</test_depend>
+ 
+    <export>
+      <build_type>ament_python</build_type>
+    </export>
+   </package>
    ```
 7. Edit `setup.py` to add the following code. The python code `xxx` can be added to the ros2 package as a run command with a nicknames or shortform aka `xxxxx` in this case. (can also add launch comamnds slightly differently). Through this the python codes can be called using `ros2 run matsive_r2 xxxxx`.
    ```
