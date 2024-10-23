@@ -104,9 +104,36 @@ To subcribe or listen to the messages from unity we can check all the nodes avai
     </export>
    </package>
    ```
-7. Edit `setup.py` to add the following code. The python code `xxx` can be added to the ros2 package as a run command with a nicknames or shortform aka `xxxxx` in this case. (can also add launch comamnds slightly differently). Through this the python codes can be called using `ros2 run matsive_r2 xxxxx`.
+7. Edit `setup.py` to add the following code. The python code `Connect_Unity.py` can be added to the ros2 package as a run command with a nicknames or shortform aka `ConnectUnity` in this case. (can also add launch comamnds slightly differently). Through this the python codes can be called using `ros2 run matsive_r2 ConnectUnity`.
    ```
-   xx
+   import os
+   from glob import glob
+   from setuptools import find_packages, setup
+
+   package_name = 'matsive_r2'
+
+   setup(
+       name=package_name,
+       version='0.0.0',
+       packages=find_packages(exclude=['test']),
+       data_files=[
+           ('share/ament_index/resource_index/packages',
+               ['resource/' + package_name]),
+           ('share/' + package_name, ['package.xml']),
+       ],
+       install_requires=['setuptools'],
+       zip_safe=True,
+       maintainer='matsive',
+       maintainer_email='matsive@todo.todo',
+       description='TODO: Package description',
+       license='Apache-2.0',
+       tests_require=['pytest'],
+       entry_points={
+           'console_scripts': [
+           'ConnectUnity = matsive_r2.Connect_Unity:main'
+           ],
+       },
+   )
    ```
 8. Go back to ros_ws folder
    ```
