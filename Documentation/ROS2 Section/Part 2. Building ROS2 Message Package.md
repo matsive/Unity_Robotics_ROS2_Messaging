@@ -95,4 +95,4 @@ In the example we will be generating messages from unity of a objects x,y,z posi
    ```
 10. Now `matsive_r2msgs` can be found in ros_ws->install folder.
 
-Proceed to [Part 3. Building ROS2 package](https://github.com/matsive/Unity_Robotics_ROS2/edit/main/Documentation/ROS2%20Section/Part%203.%20Building%20ROS2%20package.md)
+Proceed to [Part 3. Building ROS2 package](https://github.com/matsive/Unity_Robotics_ROS2/blob/main/Documentation/ROS2%20Section/Part%203.%20Building%20ROS2%20package.md)
