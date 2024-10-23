@@ -38,7 +38,7 @@ To subcribe or listen to the messages from unity we can check all the nodes avai
 
    class PositionSubscriber(Node):
 
-      def __init__(self):
+       def __init__(self):
            super().__init__('position_subscriber')
            self.subscription = self.create_subscription(
                UnityCubePosition,
@@ -55,28 +55,28 @@ To subcribe or listen to the messages from unity we can check all the nodes avai
 
 
    def main(args=None):
-         rclpy.init(args=args)
-         sys.exit()
-         tcp_server = TcpServer("UnityEndpoint")
-         tcp_server.start()
-         trajectory_subscriber = TrajectorySubscriber()   
-         try:
-         while rclpy.ok():
-              rclpy.spin_once(position_subscriber,timeout_sec=0.1)  # Process incoming messages
-              if position_subscriber.received_data is not None:
-                  print(f'{position_subscriber.received_data}')
+       rclpy.init(args=args)
+       sys.exit()
+       tcp_server = TcpServer("UnityEndpoint")
+       tcp_server.start()
+       trajectory_subscriber = TrajectorySubscriber()   
+       try:
+       while rclpy.ok():
+            rclpy.spin_once(position_subscriber,timeout_sec=0.1)  # Process incoming messages
+            if position_subscriber.received_data is not None:
+                print(f'{position_subscriber.received_data}')
    
-              #time.sleep(0.1)
-        except KeyboardInterrupt:
+            #time.sleep(0.1)
+       except KeyboardInterrupt:
            pass  # Handle keyboard interrupt for graceful shutdown
 
-        # Destroy the node explicitly
-        position_subscriber.destroy_node()
-        rclpy.shutdown()
-        tcp_server.setup_executor()
-        tcp_server.destroy_nodes()
-        rclpy.shutdown()
-        robot_shutdown()
+       # Destroy the node explicitly
+       position_subscriber.destroy_node()
+       rclpy.shutdown()
+       tcp_server.setup_executor()
+       tcp_server.destroy_nodes()
+       rclpy.shutdown()
+       robot_shutdown()
    if __name__ == "__main__":
        main()
    ```
