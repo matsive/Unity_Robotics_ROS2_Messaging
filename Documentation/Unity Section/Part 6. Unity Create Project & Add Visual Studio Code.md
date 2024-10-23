@@ -28,3 +28,5 @@ In the Hierarchy the project scenes can be found. Scene or environments are the 
  <img src="https://github.com/user-attachments/assets/0806faeb-d7c1-495b-b55a-d9f7d084b547" width="420" />
  <img src="https://github.com/user-attachments/assets/080a5f05-d9f4-4b8d-bad0-63b8e92c33f2" width="390" /> 
 </p>
+
+Proceed to [Part 7. Unity ROS2 Messages Generation](https://github.com/matsive/Unity_Robotics_ROS2/blob/main/Documentation/Unity%20Section/Part%207.%20Unity%20ROS2%20Messages%20Generation.md)
