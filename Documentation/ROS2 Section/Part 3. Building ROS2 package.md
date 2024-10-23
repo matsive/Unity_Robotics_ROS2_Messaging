@@ -18,14 +18,67 @@ To subcribe or listen to the messages from unity we can check all the nodes avai
    ```
    cd ~/ros2_ws/src
    ```
-4. Create a package (Python). I have nameed the package `matsive_r2` and the following lines would come up in terminal as given in image.
+4. Create a package (Python). I have nameed the package `matsive_r2`.
    ```
    ros2 pkg create --build-type ament_python --license Apache-2.0 <package_name>
+   ```  
+5. After creating package, inside the package folder there should be a folder with the same name aka `matsive_r2` for this case. Now create a python file named `Connect_Unity.py` and add the following code.
    ```
-# finish editing below please   
-5. After creating package inside the package there should be a folder with the same name aka `matsive_r2` for this case. Now create a python file named `xxx` and add the following code.
-   ```
-   xxx
+   import rclpy
+   from rclpy.node import Node
+   from ros_tcp_endpoint import TcpServer
+
+   from matsive_r2msgs.msg import UnityCubePosition
+   from moveit_msgs.msg import RobotTrajectory
+   from std_msgs.msg import String
+
+   import sys
+   import numpy as np
+   import time
+
+   class PositionSubscriber(Node):
+
+      def __init__(self):
+           super().__init__('position_subscriber')
+           self.subscription = self.create_subscription(
+               UnityCubePosition,
+               '/CubePos',
+               self.listener_callback,
+               10
+           )
+           self.subscription  # Prevent unused variable warning
+           self.received_data = None  # Initialize a variable to store the received data
+
+       def listener_callback(self, data):
+           self.received_data = data.joints  # Store the received message in the class variable
+           #self.get_logger().info(f'{data}')  # Optional: Log the received data
+
+
+   def main(args=None):
+         rclpy.init(args=args)
+         sys.exit()
+         tcp_server = TcpServer("UnityEndpoint")
+         tcp_server.start()
+         trajectory_subscriber = TrajectorySubscriber()   
+         try:
+         while rclpy.ok():
+              rclpy.spin_once(position_subscriber,timeout_sec=0.1)  # Process incoming messages
+              if position_subscriber.received_data is not None:
+                  print(f'{position_subscriber.received_data}')
+   
+              #time.sleep(0.1)
+        except KeyboardInterrupt:
+           pass  # Handle keyboard interrupt for graceful shutdown
+
+        # Destroy the node explicitly
+        position_subscriber.destroy_node()
+        rclpy.shutdown()
+        tcp_server.setup_executor()
+        tcp_server.destroy_nodes()
+        rclpy.shutdown()
+        robot_shutdown()
+   if __name__ == "__main__":
+       main()
    ```
 6. Edit `package.xml` and add the following code. This should include the packages required to run the the python code.
    ```
