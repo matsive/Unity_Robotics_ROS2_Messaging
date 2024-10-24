@@ -39,11 +39,60 @@ To install from a local clone of the [ROS-TCP-Connector](https://github.com/Unit
  - then navigate to "share->matsive_r2msgs->msg->UnityCubePosition.msg" and Build 1 msg
  - A RosMessage folder will be created in Assets Containting Unity Message Package.
 
-
 **Unity Script for Publishing Messages:** 
  - A C# Script `UnityMessageToTCP.cs` was create and the following code was written in it.
 ```
-(null null)
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Unity.Robotics.ROSTCPConnector;
+using RosMessageTypes.MatsiveR2msgs;
+
+public class NewBehaviourScript : MonoBehaviour
+{
+    ROSConnection ros;
+    public string topicName = "CubePos";
+
+    // The game object
+    public GameObject cube;
+    // Publish the cube's position and rotation every N seconds
+    public float publishMessageFrequency = 0.5f;
+
+    // Used to determine how much time has elapsed since the last message was published
+    private float timeElapsed;
+
+    void Start()
+    {
+        // start the ROS connection
+        ros = ROSConnection.GetOrCreateInstance();
+        ros.RegisterPublisher<UnityCubePositionMsg>(topicName);
+    }
+
+    private void Update()
+    {
+        timeElapsed += Time.deltaTime;
+
+        if (timeElapsed > publishMessageFrequency)
+        {
+            cube.transform.rotation = Random.rotation;
+
+            UnityCubePositionMsg cubePos = new UnityCubePositionMsg(
+                new double[] { (double)cube.transform.position.x },
+                new double[] { (double)cube.transform.position.y },
+                new double[] { (double)cube.transform.position.z },
+                new double[] { (double)cube.transform.rotation.x },
+                new double[] { (double)cube.transform.rotation.y },
+                new double[] { (double)cube.transform.rotation.z }
+
+            );
+
+            // Finally send the message to server_endpoint.py running in ROS
+            ros.Publish(topicName, cubePos);
+
+            timeElapsed = 0;
+        }
+    }
+}
 ```
  - Create new empty gameobject and name it `RosPublisher`.
  - Add the created script to the new gameobject **RosPublisher** in the scene by inspection-> add component -> UnityMessageToTCP.cs or dragging it to the empty area below add component in inspection.<br />
