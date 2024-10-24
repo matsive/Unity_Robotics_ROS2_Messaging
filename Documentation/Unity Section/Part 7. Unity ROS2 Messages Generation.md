@@ -99,7 +99,9 @@ public class NewBehaviourScript : MonoBehaviour
  - In that Component add the Cube gameobject by clicking the empty place and selecting the cube or dragging the cube to that empty place.<br />
  - After doing this running the Unity Game will make the cube rotate and also show error message in the terminal as ROS2 is not connected to Unity yet.
 ![image](https://github.com/user-attachments/assets/9cb4d73e-218e-4f22-8706-817278693ebe)
-
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/9cb4d73e-218e-4f22-8706-817278693ebe" width="370" />
+</p>
 
 Unity game can not be played until ROS-message is generated. To do that a ROS2 message package will be created.
 
