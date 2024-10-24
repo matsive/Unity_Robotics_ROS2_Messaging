@@ -39,4 +39,4 @@ To install from a local clone of the [ROS-TCP-Connector](https://github.com/Unit
  - then navigate to "share->matsive_r2msgs->msg->UnityCubePosition.msg" and Build 1 msg
  - A RosMessage folder will be created in Assets Containting Unity Message Package.
 
-
+Proceed to [Part 8. Unity Publish & ROS Subscribe MSGS](https://github.com/matsive/Unity_Robotics_ROS2_Messaging/blob/main/Documentation/Unity%20Section/Part%208.%20Unity%20Publish%20&%20ROS%20Subscribe%20MSGS.md)
