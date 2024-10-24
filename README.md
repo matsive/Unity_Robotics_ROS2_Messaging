@@ -2,13 +2,7 @@
 <p float="right">
   <img src="https://github.com/user-attachments/assets/4313a6b5-67e4-40b0-a830-c5f77ae5a7d7" width="800" />
 </p>
-<object width="425" height="350">
-  <param name="movie" value="http://www.youtube.com/user/wwwLoveWatercom?v=BTRN1YETpyg" />
-  <param name="wmode" value="transparent" />
-  <embed src="https://www.youtube.com/watch?v=sac_yQiaz2E"
-         type="application/x-shockwave-flash"
-         wmode="transparent" width="425" height="350" />
-</object>
+
 
 
 # Unity_Robotics_ROS2
