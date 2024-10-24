@@ -78,12 +78,12 @@ In the example we will be generating messages from unity of a objects x,y,z posi
    ```
 7. Then create a folder in the the package folder called `msg`. Open the `msg` folder to create a text file called `UnityCubePosition.txt` later change the extention to `.msg` or `UnityCubePosition.msg`. And add the following lines
    ```
-   float64[1] posx
-   float64[1] posy
-   float64[1] posz
-   float64[1] posrotx
-   float64[1] posroty
-   float64[1] posrotz
+   float64[1] x
+   float64[1] y
+   float64[1] z
+   float64[1] q1
+   float64[1] q2
+   float64[1] q3
    ```
 8. Go back to ros_ws folder
    ```
