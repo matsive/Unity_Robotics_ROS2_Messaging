@@ -4,6 +4,8 @@
 ## Part 8. Unity Publish & ROS Subscribe MSGS
 
 **Unity Script for Publishing Messages:** 
+Similar, ROS2 message generation can also be found in [ROS–Unity Integration: Publisher](https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/publisher.md) and [ROS–Unity Integration: Subscriber](https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/subscriber.md)
+
  - A C# Script `UnityMessageToTCP.cs` was create and the following code was written in it.
 ```
 using System.Collections;
