@@ -96,9 +96,10 @@ public class NewBehaviourScript : MonoBehaviour
 ```
  - Create new empty gameobject and name it `RosPublisher`.
  - Add the created script to the new gameobject **RosPublisher** in the scene by inspection-> add component -> UnityMessageToTCP.cs or dragging it to the empty area below add component in inspection.<br />
-(image null null)
  - In that Component add the Cube gameobject by clicking the empty place and selecting the cube or dragging the cube to that empty place.<br />
-(image null null)
+ - After doing this running the Unity Game will make the cube rotate and also show error message in the terminal as ROS2 is not connected to Unity yet.
+![image](https://github.com/user-attachments/assets/9cb4d73e-218e-4f22-8706-817278693ebe)
+
 
 Unity game can not be played until ROS-message is generated. To do that a ROS2 message package will be created.
 
