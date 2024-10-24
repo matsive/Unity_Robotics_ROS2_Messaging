@@ -26,6 +26,11 @@ This repository demonstrates how to set up Unity-Robotics-Hub to send messages t
 ## [Part 7. Unity ROS2 Messages Generation](https://github.com/matsive/Unity_Robotics_ROS2/blob/main/Documentation/Unity%20Section/Part%207.%20Unity%20ROS2%20Messages%20Generation.md)
 ## [Part 8. Unity Publish & ROS Subscribe MSGS](https://github.com/matsive/Unity_Robotics_ROS2_Messaging/blob/main/Documentation/Unity%20Section/Part%208.%20Unity%20Publish%20%26%20ROS%20Subscribe%20MSGS.md)
 
+Check the ROS2 connection using `rqt_graph`. Mine looks like this:
+
+![Screenshot from 2024-10-23 21-43-02](https://github.com/user-attachments/assets/879aa689-4047-4436-a625-e4282e8967ed)
+
+
 <!-- <div align="center">
   <img src="https://github.com/user-attachments/assets/65232309-1d2b-44ab-8bba-23993dca465d" alt="Screenshot" width="800"/>
 </div>
