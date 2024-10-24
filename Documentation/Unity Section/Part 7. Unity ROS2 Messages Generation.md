@@ -104,5 +104,8 @@ public class NewBehaviourScript : MonoBehaviour
   <img src="https://github.com/user-attachments/assets/9cb4d73e-218e-4f22-8706-817278693ebe" width="600" />
 </p>
 
-Unity game can not be played until ROS-message is generated. To do that a ROS2 message package will be created.
+<!-- ![image](https://github.com/user-attachments/assets/73507b37-4efd-4c8f-bc99-721f44133598)-->
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/73507b37-4efd-4c8f-bc99-721f44133598" width="600" />
+</p>
 
