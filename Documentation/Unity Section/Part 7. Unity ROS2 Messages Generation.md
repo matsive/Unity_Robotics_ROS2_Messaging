@@ -104,6 +104,15 @@ public class NewBehaviourScript : MonoBehaviour
   <img src="https://github.com/user-attachments/assets/9cb4d73e-218e-4f22-8706-817278693ebe" width="600" />
 </p>
 
+To make the connection between Unity and ROS2. The ROS2 package for subscribing to the unity messages need to run 1st. Then running the play button in unity will establish the connection. like below in terminal.
+
+`
+INFO] [1729734446.178315156] [UnityEndpoint]: Starting server on 0.0.0.0:10000
+[INFO] [1729734446.523227541] [UnityEndpoint]: Connection from 127.0.0.1
+[INFO] [1729734446.549483530] [UnityEndpoint]: RegisterSubscriber(/tf, <class 'tf2_msgs.msg._tf_message.TFMessage'>) OK
+[INFO] [1729734446.554115496] [UnityEndpoint]: RegisterPublisher(/CubePos, <class 'matsive_r2msgs.msg._unity_cube_position.UnityCubePosition'>) OK
+`
+
 <!-- ![image](https://github.com/user-attachments/assets/73507b37-4efd-4c8f-bc99-721f44133598)-->
 <p float="left">
   <img src="https://github.com/user-attachments/assets/73507b37-4efd-4c8f-bc99-721f44133598" width="600" />
