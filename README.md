@@ -1,6 +1,6 @@
-![Screencastfrom10-23-2024091753PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/4313a6b5-67e4-40b0-a830-c5f77ae5a7d7)
+<!--![Screencastfrom10-23-2024091753PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/4313a6b5-67e4-40b0-a830-c5f77ae5a7d7)-->
 <p float="center">
-  <img src="https://github.com/user-attachments/assets/4313a6b5-67e4-40b0-a830-c5f77ae5a7d7" width="1000" />
+  <img src="https://github.com/user-attachments/assets/4313a6b5-67e4-40b0-a830-c5f77ae5a7d7" width="800" />
 </p>
 
 # Unity_Robotics_ROS2
