@@ -24,8 +24,7 @@ This repository demonstrates how to set up Unity-Robotics-Hub to send messages t
 ## [Part 5. Install Unity version 2022.3.29f1](https://github.com/matsive/Unity_Robotics_ROS2/blob/main/Documentation/Unity%20Section/Part%205.%20Install%20Unity%20System.md)
 ## [Part 6. Unity Create Project & Add Visual Studio Code](https://github.com/matsive/Unity_Robotics_ROS2/blob/main/Documentation/Unity%20Section/Part%206.%20Unity%20Create%20Project%20%26%20Add%20Visual%20Studio%20Code.md)
 ## [Part 7. Unity ROS2 Messages Generation](https://github.com/matsive/Unity_Robotics_ROS2/blob/main/Documentation/Unity%20Section/Part%207.%20Unity%20ROS2%20Messages%20Generation.md)
-
-
+## [Part 8. Unity Publish & ROS Subscribe MSGS](https://github.com/matsive/Unity_Robotics_ROS2_Messaging/blob/main/Documentation/Unity%20Section/Part%208.%20Unity%20Publish%20%26%20ROS%20Subscribe%20MSGS.md)
 
 
 _end_
