@@ -1,1 +1,10 @@
 Matsive Ali (2024), Unity_Robotics_ROS2_Messsaging, https://github.com/matsive/Unity_Robotics_ROS2_Messaging
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "Unity_Robotics_ROS2_Messaging"
+authors:
+  - family-names: "Ali"
+    given-names: "Matsive"
+date-released: "10-12-2024"
+version: "1.0.0"
+url: "https://github.com/matsive/Unity_Robotics_ROS2_Messaging"
